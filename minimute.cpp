@@ -319,7 +319,7 @@ int __stdcall main()
         (g_hNotificationWindow = CreateNotifyWindow(hInstance)) != NULL &&
         InitializeNotifyIcon(hInstance, g_hNotificationWindow))
     {
-        if (RegisterHotKey(NULL, 1, 0, VK_PAUSE))
+        if (RegisterHotKey(NULL, 1, 0, VK_NUMLOCK))
         {
             SetNotifyIcon(Muted(true));
 
